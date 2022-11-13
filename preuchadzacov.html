@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="SK">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Katedra informatiky FPV UMB</title>
+      <!-- zahrnutie stylu+jquery+bootstrap!-->
+       <link rel="stylesheet" href="Plus/styl.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+      <body onload="displayResult()">
+  <div class="bg">
+          <header>
+            <h1 class="a">Katedra informatiky</h1>
+            <a href="https://www.fpv.umb.sk/"><img class="head" src="Plus/logo.png" alt="logo"></a>
+            <h2 class="a">Fakulta Prírodných vied UMB</h2>
+
+
+          <nav>
+            <a class="nav" href="index.html">Úvodná stránka</a>
+            <a class="nav" href="katedra.html">Katedra</a>
+          <a class="nav" href="clenovia.html">Členovia katedry</a>
+          <a class="nav" href="preuchadzacov.html">Pre uchádzačov</a>
+          <a class="nav" href="workshop.html">Workshop</a>
+          <a class="nav" href="kontakt.html">Kontakt</a>
+          </nav>
+
+          </header>
+
+          <section id="Pre_uchádzačov">
+            <h1>Pre uchádzačov</h1>
+            <div class="container1" id="container1" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+              <h3 style="color:white;margin-bottom:2%;text-align:center;">Úvod</h3>
+              <div id="obsah1">
+            <p style="color:white;">
+              Štúdium informatiky v Banskej Bystrici na Fakulte prírodných vied UMB má <b>viac ako tridsaťročnú tradíciu</b>. Katedra informatiky sa dnes zameriava predovšetkým na výučbu, výskum a aplikácie v študijnom odbore <b>Aplikovaná informatika</b> oblasti Informačné vedy a tradične sa zameriava aj na vzdelávanie v študijnom odbore <b>Učiteľstvo akademických predmetov</b>.
+            </p>
+          </div>
+          </div>
+          <div class="container2" id="container2" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+            <h3>Prečo študovať u nás?</h3>
+            <div id="obsah2">
+            <ul>
+              <li><b>informatika je budúcnosť</b>, IKT nájdeme skoro vo všetkých pracovných oblastiach,</li>
+              <li><b>pred štúdiom</b> u nás <b>nepotrebuješ</b> žiadne <b>predchádzaujúce vedomosti</b> z programovania, stačí ti hlava a snaha,</li>
+              <li><b>štúdium ťa nič nestojí</b>, výučbový materiál je online alebo dostupný v knižnici,</li>
+              <li><b>spolupracujeme s IT firmami</b>, získaš cenné skúsenosti a praktickú výučbu,</li>
+              <li><b>vysoké uplatnenie absolventov,</b></li>
+              <li>sú tu <b>skvelí a erudovaní učitelia a priateľská atmosféra,</b></li>
+              <li>u nás <b>nie si číslo</b>, ale poznáme tvoje meno,</li>
+              <li><b>nezaspali sme</b> na vavrínoch a ideme s informatickou dobou,</li>
+              <li>časť štúdia môžeš <b>študovať aj v zahraničí,</b></li>
+              <li>máme <b>moderný softvér</b> a <b>hardvér.</b></li>
+            </ul>
+</div>
+</div>
+<!-- tabulka z XML!-->
+<div class="container1" id="container3" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+          <h3>Aké predmety budeš študovať?</h3>
+          <div id="obsah3">
+            <div id="example">
+                <table id="AI"></table>
+
+
+</div>
+</div>
+</div>
+</section>
+
+  <footer>
+    <a href="https://www.facebook.com/KIFPV/" class="fa fa-facebook"></a>
+  <a href="https://www.youtube.com/channel/UCfHyxLlar_xlFa_AEU6nuGA" class="fa fa-youtube"></a>
+    <a style="float:right;" class="nav" data-toggle="collapse" href="#kontaktnyformular" role="button" aria-controls="kontaktnyformular">Kontaktujte nás</a>
+    <div class="collapse" id="kontaktnyformular">
+      <form name="form" action="javascript:window.open('Plus/action.html','','width=300,height=200')" onsubmit="return validacia()" >
+  <label for="meno">Meno</label>
+  <input type="text" id="meno" name="meno">
+  <br>
+  <label for="priezvisko">Priezvisko</label>
+  <input type="text" id="priezvisko" name="priezvisko">
+  <br>
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email">
+  <br>
+  <label for="kategoria">Kategória</label>
+  <select id="kategoria" name="kategoria">
+  <option value="">Vyberte možnosť</option>
+  <option value="otazkauchadzaca">Otázka uchádzača</option>
+  <option value="otazkastudenta">Otázka študenta</option>
+  <option value="otazkarodica">Otázka rodiča</option>
+  <option value="sťažnosť">Sťažnosť</option>
+  <option value="ine">Iné</option>
+  </select>
+  <br>
+  <label for="textpole"></label>
+  <textarea id="textpole" name="textpole" placeholder="Napíšte niečo...." style="height:200px"></textarea>
+  <input type="submit" value="Odoslať" id="tlacidlo">
+  </form>
+
+  </div>
+  <br>
+  <div class="row" style="width:100%;">
+    <div class="col-sm">
+      <p style="text-align:right" id="aktualnyCas"></p>
+    </div>
+    <div class="col-sm">
+      <p style="text-align:left"> © Jakub Uhrinčať</p>
+    </div>
+</div>
+  </footer>
+</div>
+
+  <script>
+  /* zmena farby navigacie*/
+$(document).ready(function(){
+   $(".nav").hover(function(){
+    $(this).css({"background-color":"#006666","color":"white"});
+    }, function(){
+    $(this).css({"background-color":"black","color":"#006666"});
+  });
+  });
+
+  /* efekty*/
+  $("#container1").click(function(){
+  $("#obsah1").fadeToggle(1500);
+});
+$("#container2").click(function(){
+$("#obsah2").fadeToggle(1500);
+});
+$("#container3").click(function(){
+$("#obsah3").fadeToggle(1500);
+});
+/* validacia*/
+  function validacia() {
+    let a = document.forms["form"]["meno"].value;
+    let b = document.forms["form"]["priezvisko"].value;
+    let c = document.forms["form"]["email"].value;
+    let d = document.forms["form"]["kategoria"].value;
+    let e = document.forms["form"]["textpole"].value;
+    if (a == "") {
+      alert("Vyplňte meno prosím!");
+      return false;
+    }
+    if (b == "") {
+      alert("Vyplňte priezvisko prosím!");
+      return false;
+    }
+    if (c == "" || c.indexOf('@') == -1 || c.indexOf('.') == -1)
+   {
+      alert("E-mail nebol zadaný alebo nieje v požadovanom tvare!");
+      return false;
+    }
+    if (d == "") {
+      alert("Vyberte kategóriu prosím!");
+      return false;
+    }
+    if (e == "") {
+      alert("Textové pole je prázdne!");
+      return false;
+    }
+  }
+ /* nacitanie XML documentu*/
+  function loadXMLDoc(filename)
+  {
+  if (window.ActiveXObject)
+    {
+    xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+    }
+  else
+    {
+    xhttp = new XMLHttpRequest();
+    }
+  xhttp.open("GET", filename, false);
+  xhttp.send("");
+  return xhttp.responseXML;
+  }
+/* funkcia so zobrazenim xml a xslt formatu */
+  function displayResult()
+  {
+  xml = loadXMLDoc("Plus/AplikovanaInf.xml");
+  xsl = loadXMLDoc("Plus/AplikovanaInf.xsl");
+
+  if (document.implementation && document.implementation.createDocument)
+    {
+    xsltProcessor = new XSLTProcessor();
+    xsltProcessor.importStylesheet(xsl);
+    resultDocument = xsltProcessor.transformToFragment(xml, document);
+    document.getElementById("example").appendChild(resultDocument);
+    }
+  }
+  function empDetails(xml) {
+      var i;
+      var xmlDoc = xml.responseXML;
+      var table1 =
+          `<tr><th>Ročník</th><th>Semester</th>
+              <th>Predmet</th></tr>`;
+      var x = xmlDoc.getElementsByTagName("Plan");
+
+      /* Cyklus s doplnovanim udajov podla tagu*/
+      for (i = 0; i < x.length; i++) {
+          table1 += "<tr><td>" +
+              x[i].getElementsByTagName("Rocnik")[0]
+              .childNodes[0].nodeValue + "</td><td>" +
+              x[i].getElementsByTagName("Semester")[0]
+              .childNodes[0].nodeValue + "</td><td>" +
+              x[i].getElementsByTagName("Predmet")[0]
+              .childNodes[0].nodeValue + "</td></tr>";
+      }
+
+      /* Zapisovanie udajov do tabulky*/
+      document.getElementById("AI").innerHTML = table1;}
+
+      /* funkcia casu s obnovovanim po 1 sek*/
+      function hodiny(){
+        var datum = new Date();
+        let rok = datum.getDate()+'/'+(datum.getMonth()+1)+'/'+datum.getFullYear();
+        var cas = datum.getHours() + ":" + datum.getMinutes() + ":" + datum.getSeconds();
+      document.getElementById('aktualnyCas').innerHTML = rok+" "+cas;
+      }
+      setInterval(hodiny,1000);
+
+  </script>
+  </body></html>

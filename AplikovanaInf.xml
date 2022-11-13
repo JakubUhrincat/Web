@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="AplikovanaInf.xsl" ?>
+
+<AI>
+  <Plan>
+    <Rocnik>Prvý</Rocnik>
+    <Semester>Zimný</Semester>
+    <Predmet>Matematika pre Informatikov 1,Algoritmy a štruktúry údajov 1,Úvod k informatike,Základy podnikania,Assembler,Špeciálny jazykový seminár</Predmet>
+  </Plan>
+  <Plan>
+    <Rocnik>Prvý</Rocnik>
+    <Semester>Letný</Semester>
+    <Predmet>Matematika pre Informatikov2,Diskrétna Matematika,Programovanie 1,Webové technológie 1,Odborná Angličtina,Semestrálny projekt 1</Predmet>
+  </Plan>
+  <Plan>
+    <Rocnik>Druhý</Rocnik>
+    <Semester>Zimný</Semester>
+    <Predmet>Programovanie 2,Algoritmy a štruktúry údajov 2,Databázové Systémy 1,Semestrálny projekt 2</Predmet>
+  </Plan>
+  <Plan>
+    <Rocnik>Druhý</Rocnik>
+    <Semester>Letný</Semester>
+    <Predmet>Operačné systémy 1,Teoretické základy Informatiky,Programovanie 3,Počítačová grafika</Predmet>
+  </Plan>
+  <Plan>
+    <Rocnik>Tretí</Rocnik>
+    <Semester>Zimný</Semester>
+    <Predmet>Operačné Systémy 2,Počítačové siete 1,Bakalársky projekt</Predmet>
+  </Plan>
+  <Plan>
+  <Rocnik>Tretí</Rocnik>
+  <Semester>Letný</Semester>
+  <Predmet>Počítačové Systémy 2,Softvérové Systémy,štátna skúška</Predmet>
+</Plan>
+</AI>

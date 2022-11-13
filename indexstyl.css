@@ -1,0 +1,47 @@
+.row{
+margin:1%;
+width: 100%;
+}
+.col{
+background-color:#006666;;
+display: flex;
+justify-content: center;
+border-radius: 15%;
+align-items: center;
+border: 2px solid white;
+height: 500%;
+color:white;
+text-shadow: 3px 3px 8px white;
+}
+
+.col:hover{
+text-shadow: 3px 3px 8px black;
+color:black;
+}
+.uvod{
+display:block;
+margin-left: auto;
+margin-right: auto;
+width: 15%;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display:none;
+  zoom:50%;
+  z-index: 1;
+}
+.videotl{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position:absolute;
+  left:46%;
+  background-color: #006666;
+  color:white;
+  border-radius: 25%;
+  z-index:1;
+}

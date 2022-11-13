@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="SK">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Katedra informatiky FPV UMB</title>
+    <!-- zahrnutie stylov+bootstrap!-->
+       <link rel="stylesheet" href="Plus/styl.css">
+       <link rel="stylesheet" href="Plus/indexstyl.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+body{background-color: black;}
+</style>
+</head>
+
+<body>
+<!-- video bez zvuku automaticky opakované dokola!-->
+  <video autoplay muted loop id="myVideo">
+<source src="Plus/videoo.mp4" type="video/mp4">
+</video>
+<!-- logo s nadpisom!-->
+<div class="container-fluid">
+    <a href="https://www.fpv.umb.sk/"><img class="titul" src="Plus/logo.png" alt="logo" ></a><br>
+    <div class="nadpis">
+<h2 class="clen"> Fakulta prírodných vied UMB</h2>
+<h1 class="ki"> Katedra Informatiky</h1>
+</div>
+</div>
+<!--tlačidlá s presmerovaním na stránky !-->
+<div class="container-fluid" id="zmiz">
+  <div class="row">
+      <a class="uvod" href="katedra.html"><div class="col" onmouseover="farba(this,'white')" onmouseout="farba(this, '#006666')">Katedra</div></a>
+      <a class="uvod" href="clenovia.html"><div class="col" onmouseover="farba(this,'white')" onmouseout="farba(this, '#006666')">Členovia katedry</div></a>
+      <a class="uvod" href="preuchadzacov.html"><div class="col" onmouseover="farba(this,'white')" onmouseout="farba(this, '#006666')">Pre uchádzačov</div></a>
+      <a class="uvod" href="workshop.html"><div class="col" onmouseover="farba(this,'white')" onmouseout="farba(this, '#006666')">Workshop</div></a>
+      <a class="uvod" href="kontakt.html"><div class="col" onmouseover="farba(this,'white')" onmouseout="farba(this, '#006666')">Kontakt</div></a>
+    </div>
+  </div>
+<br><br><br><br><br><br><br>
+<div>
+  <button class="videotl" id="myBtn" onclick="vid()">Prehraj video</button>
+</div>
+
+<script>
+/* Zmena farby containerov on mouse over */
+function farba(obj, Farba) {
+           obj.style.backgroundColor = Farba;
+       }
+       /* funckia spustenia a zastavenia videa pomocou btn */
+function vid(){
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+  if (video.paused) {
+   video.play();
+   video.style.display="block";
+   btn.innerHTML = "Zastav video";
+ } else {
+   video.pause();
+   video.style.display="none";
+   btn.innerHTML = "Prehraj video";
+ }
+}
+</script>
+</body>
+</html>

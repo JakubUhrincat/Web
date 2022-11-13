@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="SK">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Katedra informatiky FPV UMB</title>
+      <!-- Zahrnutie stylu+jquery+bootstrap !-->
+       <link rel="stylesheet" href="Plus/styl.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+      <body>
+        <div class="bg">
+          <header>
+            <h1 class="a">Katedra informatiky</h1>
+            <a href="https://www.fpv.umb.sk/"><img class="head" src="Plus/logo.png" alt="logo"></a>
+            <h2 class="a">Fakulta Prírodných vied UMB</h2>
+
+            <!-- navigácia -->
+          <nav>
+          <a class="nav" href="index.html">Úvodná stránka</a>
+          <a class="nav" href="katedra.html">Katedra</a>
+          <a class="nav" href="clenovia.html">Členovia katedry</a>
+          <a class="nav" href="preuchadzacov.html">Pre uchádzačov</a>
+          <a class="nav" href="workshop.html">Workshop</a>
+          <a class="nav" href="kontakt.html">Kontakt</a>
+          </nav>
+
+          </header>
+
+
+              <h1>Katedra</h1>
+<!-- Kontajner s efektami a rozbalením obsahu !-->
+              <div class="container2" id="container2" style="cursor:pointer;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
+              <h3>Profil</h3>
+              <div id="obsah2">
+              <p>
+                Univerzita Mateja Bela je silnou národnou univerzitou medzinárodného významu. <b>Štúdium informatiky</b> v Banskej Bystrici na Fakulte prírodných vied UMB <b>má viac než tridsaťročnú tradíciu</b>. 1.9.1989, ešte pod názvom Katedra počítačov, začala katedra študentom poskytovať vzdelávanie v študijnom odbore so špecializáciou informatika. Katedra informatiky sa dnes <b>zameriava</b> predovšetkým na <b>výučbu, výskum a aplikácie v študijnom odbore Aplikovaná informatika</b> oblasti Informačné vedy a tradične sa zameriava aj na <b>vzdelávanie v študijnom odbore Učiteľstvo akademických predmetov</b>. Pracovisko katedry je garantom rozvoja informačných technológii na Fakulte prírodných vied a nositeľom významných informatických aktivít ako v rámci Univerzity Mateja Bela, tak v rámci celého Slovenska.
+              </p>
+            </div>
+          </div>
+              <h3>Oznamy</h3>
+<!-- Slajdy s kontajnermi ktoré obsahujú oznamy !-->
+              <div class="slideshow-container">
+
+                <div class="oznam">
+                  <p><strong>Workshop:3D tlač</strong></p>
+                  <p>V rámci online podujatia sa v prvej časti účastníci dozvedia základy potrebné k práci s 3D tlačiarňami, stručnú históriu, najpoužívanejšie technológie SLA a FDM. V druhej časti si účastníci podujatia vyskúšajú modelovanie 3D objektov v online nástroji Tinkercad. V závere si účastníci vytvoria a vytlačia obal na micro:bit a vyskúšajú si naprogramovať micro:bit v prostredí MakeCode.</p>
+                  <p>Podujatie je určené hlavne pre študentov aplikovanej informatiky a učiteľstva informatiky na Katedre informatiky, FPV UMB a tiež aj pre účastníkov, ktorí sa chcú dozvedieť viac o technológii 3D tlači a modelovania 3D objektov</p>
+                  <p> <strong>Dátum podujatia:</strong> 20.10 16:30-17:30  a   27.10 16:30-17:30</p>
+                </div>
+
+                <div class="oznam">
+                  <p><strong>Workshop:Naprogramuj si hru pre VR</strong></p>
+                  <p><strong>Kedy?</strong><br>
+                    6.10.2021    14:30-16:00    a    7.10.2021    14:30-16:00</p>
+                    <p>V rámci online podujatia sa účastníci podujatia zoznámia s tvorbou aplikácií – hier pre VR. Vyskúšajú si prostredie Unreal Engine, vytvoria si vlastnú hru, ktorú budú môcť následne po podujatí vyskúšať v okuliaroch Oculus Quest 2. Vďaka tomuto podujatiu budú mať účastníci praktické skúsenosti s jedným z najpoužívanejších herných enginov, ktorý je možné používať aj na vytvorenie rôznych aplikácii pre IoT a pod.</p>
+                    <p>Online podujatie je určené hlavne pre študentov z Katedry informatiky FPV UMB, v prípade záujmu je však možné sa prihlásiť aj pre verejnosť</p>
+                </div>
+
+                <div class="oznam">
+                  <p><strong>Témy pre záverečné práce 2021-2022</strong></p>
+                  <p>Témy pre záverečné bakalárske a magisterské práce sú zverejnené na katedrovej stránke:</p>
+                  <a href="https://www.fpv.umb.sk/katedry/katedra-informatiky/pre-studentov/temy-pre-zaverecne-prace-na-akademicky-rok-2021.html"><strong>Témy záverečných prác</strong></a>
+                  <p>Študenti sú povinní zvoliť si niektorú z uvedených oblastí záverečných prác a následne s vedúcim práce presne špecifikovať zadanie témy, ktoré musí byť vypísané v systéme. Od 1.4.2021 do 7.5.2021 sa študenti prihlasujú na dohodnuté témy v systéme AIS.</p>
+                </div>
+<!-- bočné šípky !-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+<!-- bodky na spodnej časti ukazujúce polohu!-->
+              <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+
+
+<footer>
+  <!--Socialne siete!-->
+  <a href="https://www.facebook.com/KIFPV/" class="fa fa-facebook"></a>
+<a href="https://www.youtube.com/channel/UCfHyxLlar_xlFa_AEU6nuGA" class="fa fa-youtube"></a>
+
+  <!--Kontaktny formular ktory sa po stlaceni vysunie, validuje a presmeruje na druhu stranku !-->
+  <a style="float:right;" class="nav" data-toggle="collapse" href="#kontaktnyformular" role="button" aria-controls="kontaktnyformular">Kontaktujte nás</a>
+  <div class="collapse" id="kontaktnyformular">
+    <form name="form" action="javascript:window.open('Plus/action.html','','width=300,height=200')" onsubmit="return validacia()" >
+<label for="meno">Meno</label>
+<input type="text" id="meno" name="meno">
+<br>
+<label for="priezvisko">Priezvisko</label>
+<input type="text" id="priezvisko" name="priezvisko">
+<br>
+<label for="email">Email</label>
+<input type="text" id="email" name="email">
+<br>
+<label for="kategoria">Kategória</label>
+<select id="kategoria" name="kategoria">
+<option value="">Vyberte možnosť</option>
+<option value="otazkauchadzaca">Otázka uchádzača</option>
+<option value="otazkastudenta">Otázka študenta</option>
+<option value="otazkarodica">Otázka rodiča</option>
+<option value="sťažnosť">Sťažnosť</option>
+<option value="ine">Iné</option>
+</select>
+<br>
+<label for="textpole"></label>
+<textarea id="textpole" name="textpole" placeholder="Napíšte niečo...." style="height:200px"></textarea>
+<input type="submit" value="Odoslať">
+</form>
+
+</div>
+<br>
+<div class="row" style="width:100%;">
+  <div class="col-sm">
+    <p style="text-align:right" id="aktualnyCas"></p>
+  </div>
+  <div class="col-sm">
+    <p style="text-align:left"> © Jakub Uhrinčať</p>
+  </div>
+</div>
+</footer>
+
+</div>
+<script>
+/* zmena farby navigacie*/
+$(document).ready(function(){
+ $(".nav").hover(function(){
+  $(this).css({"background-color":"#006666","color":"white"});
+  }, function(){
+  $(this).css({"background-color":"black","color":"#006666"});
+});
+});
+
+/* efekt */
+$("#container2").click(function(){
+$("#obsah2").fadeToggle(1500);
+});
+
+/* validacia */
+function validacia() {
+  let a = document.forms["form"]["meno"].value;
+  let b = document.forms["form"]["priezvisko"].value;
+  let c = document.forms["form"]["email"].value;
+  let d = document.forms["form"]["kategoria"].value;
+  let e = document.forms["form"]["textpole"].value;
+  if (a == "") {
+    alert("Vyplňte meno prosím!");
+    return false;
+  }
+  if (b == "") {
+    alert("Vyplňte priezvisko prosím!");
+    return false;
+  }
+  if (c == "" || c.indexOf('@') == -1 || c.indexOf('.') == -1)
+ {
+    alert("E-mail nebol zadaný alebo nieje v požadovanom tvare!");
+    return false;
+  }
+  if (d == "") {
+    alert("Vyberte kategóriu prosím!");
+    return false;
+  }
+  if (e == "") {
+    alert("Textové pole je prázdne!");
+    return false;
+  }
+}
+
+/* Slidebox s oznamami*/
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("oznam");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+/* funkcia casu s obnovovanim po 1 sek*/
+function hodiny(){
+  var datum = new Date();
+  let rok = datum.getDate()+'.'+(datum.getMonth()+1)+'.'+datum.getFullYear();
+  var cas = datum.getHours() + ":" + datum.getMinutes() + ":" + datum.getSeconds();
+document.getElementById('aktualnyCas').innerHTML = rok+" "+cas;
+}
+setInterval(hodiny,1000);
+
+</script>
+</body></html>
